@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy Connect | Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>Legacy Connect</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="stories.html">Discover</a>
+      <a href="product.html">Partnership</a>
+      <a href="login.html">Login</a>
+      <a href="product.html" class="cta-button">Shop Now</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <p>We’re here to help with any questions about Legacy Connect.</p>
+    <div id="contact-success" class="success-banner">
+      Thank you! Your message has been sent.
+    </div>       
+    <form class="contact-form" action="#" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+      <div class="error-message" id="password-error"></div>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+      <div class="error-message" id="email-error"></div>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
+      <div class="error-message" id="password-error"></div>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <div class="error-message" id="password-error"></div>
+
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Legacy Connect. All rights reserved.</p>
+  </footer>
+</body>
+</html>

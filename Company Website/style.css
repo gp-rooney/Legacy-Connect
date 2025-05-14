@@ -1,0 +1,195 @@
+.product-hero {
+  background-color: var(--warm-taupe);
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--charcoal);
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: var(--light-sand);
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-info {
+  flex: 1;
+  padding: 1rem;
+}
+
+.product-info ul {
+  list-style: disc inside;
+  margin: 1rem 0;
+}
+
+.product-benefits {
+  background-color: var(--light-sand);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.benefit-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.stories-hero {
+  background-color: var(--warm-taupe);
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--charcoal);
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--light-sand);
+}
+
+.story-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+.story-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.story-link {
+  margin-top: auto;
+  color: var(--sage-green);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.story-link:hover {
+  color: var(--dusty-rose);
+}
+.login-section {
+  background-color: var(--light-sand);
+  padding: 4rem 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.login-form input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form label {
+  text-align: left;
+  font-weight: bold;
+  color: var(--charcoal);
+}
+
+.login-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-footer a {
+  color: var(--sage-green);
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  color: var(--dusty-rose);
+}
+.contact-section {
+  background-color: var(--light-sand);
+  padding: 4rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+  color: var(--charcoal);
+}
+.error-message {
+  color: var(--dusty-rose);
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  height: 1rem;
+}
+.success-banner {
+  background-color: var(--sage-green);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  transition: opacity 0.5s ease-in-out;
+}
+.success-banner {
+  background-color: var(--sage-green);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: relative;
+}
+
+/* Active state when visible */
+.success-banner.show {
+  transform: translateY(0);
+  opacity: 1;
+}
